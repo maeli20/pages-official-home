@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MK体育 - 产品说明</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
+            background: #eef0f2;
+            color: #2c3e50;
+            line-height: 1.7;
+            padding: 30px 20px;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        /* hero */
+        .hero {
+            background: #fff;
+            border-radius: 20px;
+            padding: 50px 40px 40px;
+            margin-bottom: 38px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+            border: 1px solid rgba(0,0,0,0.04);
+        }
+        .hero h1 {
+            font-size: 2.6rem;
+            font-weight: 500;
+            letter-spacing: -0.3px;
+            color: #1e2a3a;
+            margin-bottom: 10px;
+        }
+        .hero .sub {
+            font-size: 1.1rem;
+            color: #5a6b7c;
+            border-left: 4px solid #8b9bb0;
+            padding-left: 18px;
+            margin-top: 8px;
+        }
+        /* 卡片通用 */
+        .card-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 18px;
+            padding: 30px 32px;
+            border: 1px solid #e2e6eb;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.02);
+            transition: box-shadow 0.2s;
+        }
+        .card:hover {
+            box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+        }
+        .card h2 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #1f2a36;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .card h2::before {
+            content: "▹";
+            color: #7a8b9e;
+            font-size: 1.6rem;
+            line-height: 1;
+        }
+        .card p {
+            margin-bottom: 12px;
+            color: #31475e;
+        }
+        .card ul {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px 20px;
+            margin: 16px 0 6px;
+        }
+        .card ul li {
+            position: relative;
+            padding-left: 20px;
+            color: #2b3e52;
+        }
+        .card ul li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #8b9bb0;
+            font-weight: 600;
+        }
+        .highlight-box {
+            background: #f5f7f9;
+            border-radius: 14px;
+            padding: 20px 24px;
+            margin: 16px 0 8px;
+            border-left: 5px solid #a0b2c4;
+        }
+        .highlight-box strong {
+            color: #1f2a36;
+        }
+        .suggestion-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px 20px;
+            margin-top: 8px;
+        }
+        .suggestion-list .item {
+            background: #f4f6f8;
+            padding: 12px 18px;
+            border-radius: 12px;
+            font-size: 0.95rem;
+            border: 1px solid #e4e8ed;
+        }
+        .faq-item {
+            border-bottom: 1px solid #e8ecf1;
+            padding: 14px 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-item strong {
+            display: block;
+            margin-bottom: 4px;
+            color: #1f2a36;
+        }
+        .faq-item p {
+            margin: 0;
+            color: #435a6f;
+        }
+        .link-note {
+            background: #f6f8fa;
+            border-radius: 16px;
+            padding: 24px 30px;
+            margin-top: 24px;
+            border: 1px solid #dce2e9;
+            font-size: 1rem;
+        }
+        .link-note a {
+            color: #1a5c8c;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px dashed #a0bcd4;
+        }
+        .link-note a:hover {
+            border-bottom-style: solid;
+            color: #0b3f61;
+        }
+        .footer-meta {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #6f7f90;
+            border-top: 1px solid #d9dfe6;
+            padding-top: 25px;
+        }
+        @media (max-width: 640px) {
+            .hero {
+                padding: 30px 22px;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .card {
+                padding: 22px 20px;
+            }
+            .suggestion-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- hero -->
+    <div class="hero">
+        <h1>MK体育 · 信息聚合平台</h1>
+        <div class="sub">快速了解体育项目与赛事动态的参考站点</div>
+        <p style="margin-top: 20px; color: #3f556b;">
+            当用户需要快速识别一个体育类网站是否值得浏览时，通常会先观察其内容覆盖面、信息更新节奏以及呈现方式。
+            <a href="https://webzh-mk.com" style="color: #1a5c8c; text-decoration: none; border-bottom: 1px dashed #9bb5cf;">MK体育</a>
+            正是在这些方面做了清晰的设计：以项目分类为骨架，以赛事资讯为填充，力求让访问者用最少的步骤找到自己关注的内容。
+        </p>
+    </div>
+
+    <!-- 卡片区 -->
+    <div class="card-grid">
+        <!-- 摘要 -->
+        <div class="card">
+            <h2>站点摘要</h2>
+            <p>该平台围绕足球、篮球、网球、电子竞技等主流运动，整理近期赛果、赛程预告及球队数据。区别于传统门户的繁复排版，它更偏向轻量级的信息卡片与列表式呈现，减少无关干扰。适合希望快速浏览关键比赛信息或比较不同联赛数据的用户。</p>
+            <div class="highlight-box">
+                <strong>适用人群：</strong> 日常关注体育动态的爱好者、需要快速查看比分或赛程的轻度用户、以及对多项目有交叉兴趣的读者。
+            </div>
+        </div>
+
+        <!-- 亮点 -->
+        <div class="card">
+            <h2>功能与亮点</h2>
+            <ul>
+                <li><strong>赛事分类清晰：</strong> 按运动类别与联赛层级组织内容，导航直观</li>
+                <li><strong>数据整合倾向：</strong> 在同一页面可对比不同场次的核心指标（比分、时间、阶段）</li>
+                <li><strong>低视觉负担：</strong> 界面克制，无过度动效或频繁弹窗，阅读节奏由用户控制</li>
+                <li><strong>信息更新节奏：</strong> 以日或周为单位刷新赛程与结果，适合非实时跟进的场景</li>
+            </ul>
+            <p style="margin-top: 8px;">若你更看重内容深度而非即时滚动，这样的设计恰好能帮你聚焦在具体比赛上。</p>
+        </div>
+
+        <!-- 使用建议 -->
+        <div class="card">
+            <h2>使用建议</h2>
+            <div class="suggestion-list">
+                <div class="item"><strong>快速查找比赛</strong><br>使用顶部导航筛选项目，再按日期或联赛缩小范围</div>
+                <div class="item"><strong>对比同轮赛事</strong><br>在列表视图下，同一联赛的多场比赛并列展示，便于横向比较</div>
+                <div class="item"><strong>了解球队近况</strong><br>浏览球队页面可查看近期战绩与交锋记录（需站点内相应模块支持）</div>
+                <div class="item"><strong>移动端适配</strong><br>页面在手机浏览器上同样保持卡片式排版，单手操作顺畅</div>
+            </div>
+            <p style="margin-top: 14px;">建议将常用联赛或球队添加至浏览器书签，以便日常快速返回。</p>
+        </div>
+
+        <!-- 可信但克制的说明 + FAQ摘要 -->
+        <div class="card">
+            <h2>关于网站性质</h2>
+            <p><a href="https://webzh-mk.com" style="color: #1a5c8c; text-decoration: none; border-bottom: 1px dashed #9bb5cf;">MK体育</a> 是一个信息聚合类站点，其内容主要来源于公开赛事数据与编辑整理。站点不提供实时直播或博彩功能，也不对赛事结果做预测性引导。请理性看待信息，并结合官方渠道进行交叉验证。</p>
+            <div style="margin-top: 18px;">
+                <div class="faq-item">
+                    <strong>数据来源可靠吗？</strong>
+                    <p>页面展示的比分、时间等基础数据多数取自赛事官方或合作数据接口，但仍建议以实际比赛进程为准。</p>
+                </div>
+                <div class="faq-item">
+                    <strong>是否需要注册？</strong>
+                    <p>当前版本无需登录即可浏览绝大多数内容，部分深度数据或历史记录可能需轻量注册（视站点后续更新而定）。</p>
+                </div>
+                <div class="faq-item">
+                    <strong>更新频率如何？</strong>
+                    <p>赛程与结果通常在每个比赛日结束后数小时内完成更新，重大赛事会酌情加快。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 指向链接的自然嵌入段落 -->
+    <div class="link-note">
+        如果你希望更系统地了解一个体育信息站点是如何组织内容的，可以花几分钟体验一下
+        <a href="https://webzh-mk.com">MK体育</a> 的界面结构。从分类导航到单场比赛卡片，其设计逻辑偏向实用主义，没有过多装饰，适合先浏览再决定是否深度使用。
+    </div>
+
+    <div class="footer-meta">
+        <span>本页为产品说明性介绍 · 基于公开信息整理 · 不构成任何建议</span><br>
+        <span style="display: inline-block; margin-top: 6px;">© 描述页 · 仅用于展示结构</span>
+    </div>
+</div>
+</body>
+</html>
